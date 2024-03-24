@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather application</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="text">Weather application</h1>
+        <form action="">
+            <div>
+                <label for="city">Enter your city</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <button type="button" onclick="fetchWeather()">Go</button>
+        </form>
+        <ul class="result" id="hidden">
+            <li class="items">Cloud percentage(%): <span id="cloud_pct"></span></li>
+            <li class="items">Temperature(&#8451): <span id="temp"></span></li>
+            <li class="items">Feels like(&#8451): <span id="feels_like"></span></li>
+            <li class="items">Humidity(%): <span id="humidity"></span></li>
+            <li class="items">Min Temp(&#8451): <span id="min_temp"></span></li>
+            <li class="items">Max Temp(&#8451): <span id="max_temp"></span></li>
+            <li class="items">Wind Speed(km/h): <span id="wind_speed"></span></li>
+            <li class="items">Wind Degress: <span id="wind_degrees"></span></li>
+            
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
